@@ -1,6 +1,4 @@
-if (process.env.NODE_ENV !== 'production') {
-    Error.stackTraceLimit = Infinity;
-}
+require('cute-stack')();
 const express = require('express');
 
 const routes = require('./routes');
